@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sam.jpg");
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-image: linear-gradient(pink,yellow);
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-image: linear-gradient(pink,blue);
+  color: white;
+}
+.photo{
+}
+.photo img{
+  margin-top: 5vh;
+  margin-left: 5vh;
+ border-radius: 20px;
+  height: 20vh;
+}
+.content{
+   margin-top: 2vh;
+  margin-left: 0vh; 
+  color:rgba(22, 22, 21, 0.877);
+  size:vh;
+  background-image: url("bk.jpg");
+  height: fit-content;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 20px;
+  padding: 2px;
+
+  
+}
+.col{
+ color: red;
+ background-color: rgb(255, 234, 0);
+padding: 10px;
+margin-top: 30px;
+margin-left: 50px;
+}
+.gg{
+  margin-top: 2vh;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(pink,yellow);
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:20px">saravanan</h1>
+    <p>software engineer</p>
+    <button>download resume</button>
+    <button>Hire me</button>
+  </div>
+<div class="photo">
+  <img src="20EUIT509-SARAVANAN-PHOTO.JPG">
+</div>
+</div>
+<div class="content">
+  <h3>Hi I am Saravanan currently pursuing Information Technology in Sri Krishna College of Engineering and Technology with 80 cgpa and intrested in full stack development and i use html,css, javascript for frontend and java for backend and MySql for database and i also know web -based frameworks I love playing basketball and have represented my school in many competitions. My active participation in sports has taught me many skills. I am also an active member of my school alumni club and take initiative in organizing alumni meets. I have a fascination for languages, so I am learning the Japanese language</h3>
+  
+</div>
+<div class="gg">
+  <div style="margin: left 40px;"> 
+<label>Enter Your Name Here</label><br>
+<input type="text"><br>
+<label>Enter Your Mail id</label><br>
+<input type="text"><br>
+<label>type your gender</label><br>
+<input type="text"><br>
+<label>Enter age</label><br>
+<input type="text"><br>
+<button type="submit" name="submit" class="col">   Submit </button>
+</div>
+</div>
+</body>
+</html>
