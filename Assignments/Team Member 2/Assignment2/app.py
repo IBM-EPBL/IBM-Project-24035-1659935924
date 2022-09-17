@@ -3,7 +3,7 @@ wep = Flask(__name__)
 
 @wep.route('/')
 def a():  # put application's code here
-    return render_template('HTML/homePage.html')
+    return render_template('html/homePage.html')
 
 
 @wep.route('/about')

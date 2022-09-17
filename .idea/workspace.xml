@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31270fd3-acd9-44a1-bf55-9f4319af10ea" name="Changes" comment="venk">
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/capt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/iron.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/sign.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/thor1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/New Text Document.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/SignPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/SignPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/aboutPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/aboutPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/homePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/sigupPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/sigupPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/static/home.css" afterDir="false" />
     </list>
     <list id="130d0dd4-549a-4353-a6a1-b8974cda3e6f" name="Changes by arunachalam" comment="">
       <change beforePath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" afterDir="false" />
@@ -44,8 +32,7 @@
     <file path="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py">
       <ranges>
         <range start1="0" end1="1" start2="0" end2="1" changelist="8467c57c-eb39-47f8-9092-d3d00e75465a" />
-        <range start1="6" end1="6" start2="6" end2="9" changelist="31270fd3-acd9-44a1-bf55-9f4319af10ea" />
-        <range start1="9" end1="10" start2="12" end2="12" changelist="130d0dd4-549a-4353-a6a1-b8974cda3e6f" />
+        <range start1="12" end1="13" start2="12" end2="12" changelist="130d0dd4-549a-4353-a6a1-b8974cda3e6f" />
       </ranges>
     </file>
   </component>
@@ -136,7 +123,7 @@
       <updated>1663338517092</updated>
       <workItem from="1663338518722" duration="672000" />
       <workItem from="1663339327568" duration="4221000" />
-      <workItem from="1663386513011" duration="19537000" />
+      <workItem from="1663386513011" duration="19914000" />
     </task>
     <task id="LOCAL-00001" summary="venk">
       <created>1663395937493</created>
@@ -145,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663395937493</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="venk">
+      <created>1663415016928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663415016928</updated>
+    </task>
+    <task id="LOCAL-00003" summary="venk">
+      <created>1663415131140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663415131140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +172,6 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IBM_Project_24035_1659935924$app.coverage" NAME="app Coverage Results" MODIFIED="1663414809366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2" />
+    <SUITE FILE_PATH="coverage/IBM_Project_24035_1659935924$app.coverage" NAME="app Coverage Results" MODIFIED="1663415171511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2" />
   </component>
 </project>

@@ -116,9 +116,9 @@ nav a{
     padding-bottom: 5px;
     border: none;
     box-shadow: 0 4px 8px 0 black ;
-    transition: 1s;}
+    transition: 0.5s;}
 .button:hover{
-    box-shadow: 0 100px 100px 0 white;
+    box-shadow: 0 40px 40px 0 black;
 }
 .new{
     padding:50px ;
