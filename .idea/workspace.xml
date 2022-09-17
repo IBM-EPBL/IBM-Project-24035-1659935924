@@ -2,36 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31270fd3-acd9-44a1-bf55-9f4319af10ea" name="Changes" comment="venk">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gitHub repo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/css/homepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/css/sign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/css/signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/SignPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/aboutPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/homePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/Team Member 2/Assignment2/templates/html/sigupPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="130d0dd4-549a-4353-a6a1-b8974cda3e6f" name="Changes by arunachalam" comment="">
+      <change beforePath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" afterDir="false" />
+    </list>
+    <list id="8467c57c-eb39-47f8-9092-d3d00e75465a" name="Changes by SARAVANANRIO" comment="">
+      <change beforePath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Assignments/Team Lead/Assignment2/app.py">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="8467c57c-eb39-47f8-9092-d3d00e75465a" />
+        <range start1="9" end1="10" start2="9" end2="9" changelist="130d0dd4-549a-4353-a6a1-b8974cda3e6f" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Er0hkx20601vMy8WHD55ssDcmY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "I:/gitHub repo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/gitHub repo&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,6 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663338517092</updated>
       <workItem from="1663338518722" duration="672000" />
+      <workItem from="1663339327568" duration="4221000" />
+      <workItem from="1663386513011" duration="8707000" />
     </task>
     <servers />
   </component>
