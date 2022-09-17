@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet"   href="{{ url_for('static',filename='about.css') }}" />
 </head>
 <div class="about-section">
     <h1>About Us Page</h1>
@@ -11,7 +11,8 @@
 <div class="row">
     <div class="column">
         <div class="card">
-            <img src="thor1.jpg" alt="about" style="width:100%">
+            <img src="/static/thor1.jpg" alt="about" style="width:100%">
+
             <div class="container">
                 <h2>Chris Hemsworth
                 </h2>
@@ -25,7 +26,7 @@
 
     <div class="column">
         <div class="card">
-            <img src="capt.jpg" alt="about" style="width:100%">
+            <img src="/static/capt.jpg" alt="about" style="width:100%">
             <div class="container">
                 <h2>Chris evens</h2>
                 <p class="title">Art Director</p>
@@ -38,7 +39,7 @@
 
     <div class="column">
         <div class="card">
-            <img src="iron.jpg" alt="about" style="width:90%">
+            <img src="/static/iron.jpg" alt="about" style="width:90%">
             <div class="container">
                 <h2>Robert Downey jr</h2>
                 <p class="title">Designer</p>
