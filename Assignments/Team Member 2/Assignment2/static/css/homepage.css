@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-family:poppins;
+    font-family:"Times New Roman";
 }
 .wrapper{
     width: 1170px;
@@ -73,19 +73,19 @@ nav a{
 }
 @keyframes animate {
     0%{
-        background: snow;
+        background: brown;
     }
     25%{
-        background: #FD349C;
+        background: blueviolet;
     }
     50%{
-        background: #E45E9D;
+        background: blueviolet;
     }
     75%{
-        background: #E4287C;
+        background: blueviolet;
     }
     100%{
-        background: #E30B5D;
+        background: blueviolet;
     }
 }
 
@@ -107,7 +107,7 @@ nav a{
     color:#fff;
 }
 .button{
-    color: deeppink;
+    color: darkgoldenrod;
     background-color: white;
     border-radius:12px ;
    padding-left: 5px;

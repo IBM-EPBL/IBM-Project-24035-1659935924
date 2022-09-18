@@ -1,9 +1,15 @@
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet"   href="{{ url_for('static',filename='sign.css') }}" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+    <link rel="stylesheet"   href="{{ url_for('static',filename='css/sign.css') }}" />
 </head>
-<form  >
-
-
+<body>
+<form>
     <div class="container">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
@@ -22,3 +28,5 @@
         <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
 </form>
+</body>
+</html>
