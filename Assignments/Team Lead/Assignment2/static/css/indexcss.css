@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: conic-gradient(deepskyblue, skyblue);
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.header {
+    background-image: url("../images/polygonal19.jpg");
+    height: 20vh;
+    margin: 1vh;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.photo {
+    /*background-color: ORANGE;*/
+    height: 95%;
+    width: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.name {
+    /*background-color: darkblue;*/
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    align-content: center;
+}
+
+.name h1, h2, h3, a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: wheat;*/
+
+}
+
+.name button {
+    border-color: transparent;
+    background-color: transparent;
+    padding: 2px;
+}
+
+.name h1 {
+    font-size: calc(16px + 6 * ((100vw - 200px) / 680));
+}
+
+.name h2 {
+    font-size: calc(16px + 6 * ((100vw - 400px) / 680))
+}
+
+.name h3 {
+    text-align: center;
+    font-size: calc(16px + 6 * ((100vw - 800px) / 680));
+}
+
+.content, .contact {
+    height: fit-content;
+    margin: 1vh;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 30px;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    padding: 15px;
+}
+
+.content {
+    color: black;
+    font-size: calc(16px + 6 * ((100vw - 100px) / 680));
+    text-align: justify;
+}
+
+.contact {
+    text-align: center;
+    height: fit-content;
+}
+
+.forms
+{
+width: fit-content;
+    margin: auto;
+}
+.name,.mail {
+margin: 2vh;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    color: whitesmoke;
+    font-size: 18px;
+    box-shadow: 10px 20px 25px rgb(0, 0, 0, .1);
+    border-radius: 20px;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+button {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: 10px 20px 25px rgb(0, 0, 0, .2);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 30px;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+button:hover
+{
+     background: linear-gradient(to right,#3f5efb,#fc4666);
+}
+
+::-webkit-scrollbar
+{
+    width: 20px;
+}
+::-webkit-scrollbar-track
+{
+        background: linear-gradient(to right,#3f5efb,#fc4666);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#fc4666;
+    border-radius: 20px;
+
+}
+@media only screen and (max-width: 600px) {
+    body
+    {
+        overflow: scroll;
+    }
+    .header {
+        display: block;
+        overflow: visible;
+        height: fit-content;
+
+    }
+    .name
+    {
+        width: auto;
+    }
+    .photo {
+        height: 20vh;
+    }
+
+    .photo img {
+        border-radius: 500vh;
+    }
+
+    .form {
+        display: block;
+    }
+}
