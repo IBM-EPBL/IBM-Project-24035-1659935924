@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+         <link rel="stylesheet" href="../../static/css/reg.css">
+         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header">
+            <h2>CREATE ACCOUNT</h2>
+        </div>
+    </header>
+    <form id="forms" method="post">
+        <div class="part1" >
+            <div class="form_controller">
+                <label>USER NAME</label>
+                <input type="text" placeholder="USER NAME" id="username" name="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>FIRST NAME</label>
+                <input type="text" placeholder="Full Name" id="fullname" name="fullname">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>MAIL ID</label>
+                <input type="email" placeholder="Enter Your mailID" id="mailid" name="mailid">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>PASSWORD</label>
+                <input type="password" placeholder="Enter password" id="password" name="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>CONFIRM PASSWORD</label>
+                <input type="password" placeholder="Enter password" id="conpassword" name="conpassword">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+        </div>
+
+
+        <!--part2-->
+        <div class="more"> <h4>MORE</h4> </div>
+
+        <div class="part2">
+        <div class="form_controller">
+            <label>GENDER</label>
+            <div class="radio">
+                <input type="radio" id="male" name="gender" value="male">MALE
+                <input type="radio" id="female" name="gender" value="female">FEMALE
+                <input type="radio" id="other" name="gender" value="others">OTHERS
+            </div>
+        </div>
+            <div class="form_controller">
+                <label>DOB</label>
+                <input type="date" id="dob" name="dob">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>MOBILE NUMBER</label>
+                <input type="text" placeholder="Your Mobile Number" id="phno" name="phno">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>BLOOD GROUP</label>
+                <input type="text" placeholder="YOUR BLOOD GROUP" id="bld" name="bld">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form_controller">
+                <label>CITY</label>
+                <input type="text" placeholder="YOUR CITY" id="city" name="city">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
+<script>
+    morebutton = document.querySelector(".more"),
+    nextpart2 = document.querySelector(".part2"),
+    contain = document.querySelector(".container");
+
+morebutton.addEventListener("click",() =>
+{
+    nextpart2.classList.add("part2adding");
+    contain.classList.add("contain");
+    morebutton.classList.add("nextbutton");
+})
+
+
+
+
+</script>
+</body>
+</html>
