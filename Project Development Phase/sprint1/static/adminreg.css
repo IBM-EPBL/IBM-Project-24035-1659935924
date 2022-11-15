@@ -114,11 +114,8 @@ small
 {
     visibility: hidden;
     color: white;
-    left: 0;
-    top: 0;
 }
 .user.error small
 {
     visibility: visible;
 }
-
