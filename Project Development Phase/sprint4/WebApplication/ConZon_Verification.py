@@ -1,3 +1,4 @@
+import haversine as hs
 import ibm_db
 
 import ConZon_Mail_config
@@ -99,6 +100,7 @@ def dashboard_data_delete(data):
             query = "DELETE FROM containment_details WHERE Address = ?"
             prep_stmt = Prepare_db(query)
             ibm_db.bind_param(prep_stmt, 1, data[4][colCnt])
+            print("ok")
             execution(prep_stmt)
         return True
     except():
@@ -119,4 +121,87 @@ def containmentZone_withoutCommon():
     return res[0]
 
 
-print(dashboard_data())
+# ----------------- USer_db----------------#
+def user_register(username, name, passwords):
+    query = "Select mail_id from user_profile where mail_id =?;"
+    prep_stmt = Prepare_db(query)
+    ibm_db.bind_param(prep_stmt, 1, name)
+    execution(prep_stmt)
+    res = ibm_db.fetch_both(prep_stmt)
+    if res is not False:
+        return "⚠️Account is already available"
+    else:
+        query = "INSERT INTO user_profile (username,mail_id,password) VALUES (?,?,?)"
+        prep_stmt = Prepare_db(query)
+        ibm_db.bind_param(prep_stmt, 1, username)
+        ibm_db.bind_param(prep_stmt, 2, name)
+        ibm_db.bind_param(prep_stmt, 3, passwords)
+        execution(prep_stmt)
+        ConZon_Mail_config.assing_mail('ConZo Account Creation', 'Account was successfully Created', name)
+        return "Created successfully 😍"
+
+
+def user_login_verification(name, password):
+    query = "Select mail_id,password from user_profile where mail_id = ?"
+    prep_stmt = Prepare_db(query)
+    ibm_db.bind_param(prep_stmt, 1, name)
+    execution(prep_stmt)
+    res = ibm_db.fetch_both(prep_stmt)
+    if res is False:
+        return 'Account Not Found 😞'
+    else:
+        if password == res[1]:
+            return 'Logined  Successfully 😍'
+        else:
+            return 'Password is Incorrect 🙁'
+
+
+def Con_details():
+    query = 'Select * from containment_details'
+    stmt = execution_immediate(query)
+    dictionary = ibm_db.fetch_both(stmt)
+    employee = []
+    while dictionary != False:
+        content = {}
+        content = {'Latitude': dictionary[3],
+                   'Longitude': dictionary[4]}
+        employee.append(content)
+        content = {}
+        dictionary = ibm_db.fetch_both(stmt)
+    return employee
+
+
+def userloginprocess(res):
+    ss1 = res.replace("\"", "")
+    ss1 = ss1.replace("{", "")
+    ss1 = ss1.replace("}", "")
+    resa = ss1.split(',')
+    return user_login_verification(resa[0].split(":")[1], resa[1].split(":")[1])
+
+
+def userRegprocess(res):
+    print(res)
+    ss1 = res.replace("\"", "")
+    ss1 = ss1.replace("{", "")
+    ss1 = ss1.replace("}", "")
+    resa = ss1.split(',')
+    return user_register(resa[2].split(":")[1], resa[0].split(":")[1], resa[1].split(":")[1])
+
+
+def locationprocess(res):
+    ss1 = res.replace("\"", "").replace("{", "").replace("}", "").split(',')
+    userlati = float(ss1[0].split(':')[1])
+    userlongi = float(ss1[1].split(':')[1])
+    query = 'Select * from containment_details'
+    stmt = execution_immediate(query)
+    dictionary = ibm_db.fetch_both(stmt)
+    s5 = Con_details()
+    for i in range(len(s5)):
+        dis = hs.haversine((userlati, userlongi), (float(s5[i]["Latitude"]), float(s5[i]["Longitude"])))
+        if (dis < 0.2):
+            return "YOU ARE IN CONTAINMENT ZONE"
+
+    return "YOU ARE NOT IN CONTAINMENT ZONE ✌️"
+
+
+locationprocess('{"Latitude":"11.022742869111418","Longitude":"76.9071527570486"}')

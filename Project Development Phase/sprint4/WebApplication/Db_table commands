@@ -1,0 +1,13 @@
+--CREATE TABLE admin_profile (
+--   mail_id varchar(200) NOT NULL,
+--   password varchar(200) NOT NULL,
+--   Hospital_ID varchar(100) NOT NULL);
+
+CREATE TABLE containment_details (
+  ID INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 100, INCREMENT BY 5),
+  Name varchar(200) NOT NULL,
+  City varchar(200) NOT NULL,
+  Latitude varchar(200) NOT NULL,
+  Longitude varchar(200) NOT NULL,
+  Address varchar(200) NOT NULL
+);

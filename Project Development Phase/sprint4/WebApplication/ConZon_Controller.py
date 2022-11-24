@@ -1,8 +1,11 @@
+# --------------------importing Packages ------------------------------#
+
 from flask import render_template, request, redirect, jsonify, Flask
 from flask_mail import Mail
 
 import ConZon_Verification
 
+# --------------------Creation Application and Some configurations ------------------------------#
 ConZon = Flask(__name__)
 mails = Mail(ConZon)
 ConZon.secret_key = '[%_CvOeNnZkOtNeCsOhN_%]'
@@ -16,6 +19,8 @@ ConZon.config['MAIL_USE_SSL'] = True
 mails = Mail(ConZon)
 
 
+# --------------------Our WebApplication ------------------------------#
+# -----Home Page ----------#
 @ConZon.route('/')
 def home_page():
     if request.cookies.get('ConZon_login') == 'True':
@@ -27,6 +32,7 @@ def home_page():
         return redirect('/admin/login')
 
 
+# --------------------Login Route ------------------------------#
 @ConZon.route('/admin/login', methods=['POST', 'GET'])
 def admin_login():
     if request.method == 'GET':
@@ -44,6 +50,7 @@ def admin_login():
             return render_template('adminLogin.html', data=res)
 
 
+# -----Logout Route----#
 @ConZon.get('/logout')
 def admin_logout():
     res = redirect('/')
@@ -51,6 +58,7 @@ def admin_logout():
     return res
 
 
+# --------------------Admin Registration Route ------------------------------#
 @ConZon.route('/admin/registration', methods=['POST', 'GET'])
 def admin_register():
     if request.method == 'GET':
@@ -64,6 +72,7 @@ def admin_register():
             return render_template('adminRegistration.html', data=res)
 
 
+# --------------------Admin Dashboard Routes ------------------------------#
 @ConZon.route('/display_data_add', methods=['POST'])
 def display_add():
     try:
@@ -92,5 +101,36 @@ def display_datas():
     return jsonify({"data": ConZon_Verification.dashboard_data()})
 
 
+# --------------------Mobile Application ------------------------------#
+
+@ConZon.route('/mobile')
+def sample():
+    return "hello"
+
+
+@ConZon.route('/User_Registration', methods=['POST'])
+def UserRegistration():
+    ss = request.get_data().decode()
+    return '{"result":"' + ConZon_Verification.userRegprocess(ss) + '"}'
+
+
+@ConZon.route('/User_login', methods=['POST'])
+def UserLogin():
+    ss = request.get_data().decode()
+    return '{"result":"' + ConZon_Verification.userloginprocess(ss) + '"}'
+
+
+@ConZon.route('/userlocation', methods=['POST'])
+def userlocation():
+    ss = request.get_data().decode()
+    return '{"result":"' + ConZon_Verification.locationprocess(ss) + '"}'
+
+
+@ConZon.route('/Con_data')
+def Containment_data():
+    return jsonify(ConZon_Verification.Con_details())
+
+
+# --------------------Running Application ------------------------------#
 if __name__ == '__main__':
-    ConZon.run(debug=True)
+    ConZon.run(debug=True, host="0.0.0.0")

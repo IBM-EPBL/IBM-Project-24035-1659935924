@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ConZon</title>
+    <link rel="stylesheet" href="../static/home_page.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="icon" href="../static/picture/conzo-logo.png" type="image/icon type">
+</head>
+<body>
+<div class="container">
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="#" class="logo">
+                <img src="../static/picture/admin%20logo.png" alt="adminlogo">
+                <span class="nav-item" id="userName"></span>
+            </a></li>
+            <li><a onclick="show('dashboard')">
+                <i class="fas fa-menorah"></i>
+                <span class="nav-item">Dashboard</span>
+            </a></li>
+            <li><a onclick="show('update')">
+                <i class="fas fa-database"></i>
+                <span class="nav-item">Update</span>
+            </a></li>
+
+            <li><a href="/logout" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+            </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- dashboard -->
+    <section class="main" id="dashboard">
+        <div class="main-top">
+            <h1>Current Status</h1>
+        </div>
+        <div class="users">
+            <div class="card">
+                <h4>Current patient status</h4>
+                <div class="status"><h1></h1></div>
+            </div>
+            <div class="card">
+                <h4>Current Zone status</h4>
+                <div class="status" id="sta2"><h1></h1></div>
+            </div>
+        </div>
+
+        <section class="patent">
+            <div class="patent-list">
+                <h1>Recently Added Containment Zone</h1>
+                <table class="table" id="Current_details">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Address</th>
+                    </tr>
+                    </thead>
+                    <tbody id="show_details">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <!-- update detail -->
+    <section class="main" id="update">
+        <div class="main-top">
+            <h1>Updating Data</h1>
+        </div>
+        <!--Inserting Data to Db-->
+        <form action="/display_data_add" method="post" class="admin_form">
+            <section class="patent">
+                <h1>Insert Data To Add Containment Zone </h1>
+                <table class="table" id="admin_table">
+                    <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Mail_id</th>
+                        <th>Button</th>
+                    </tr>
+                    </thead>
+                    <tbody id="add_input">
+                    </tbody>
+                </table>
+            </section>
+            <button type="button" onclick="assign_name('#add_input','#admin_table');onAddWebsite();" id="add_button">ADD
+                ROW
+            </button>
+            <button type="submit" class="submit_btn">Submit</button>
+        </form>
+        <!--Deleting Data from Db-->
+        <form action="/delete_data" method="post" class="admin_form_delete">
+            <section class="patent">
+                <h1>Delete Data From Containment Zone </h1>
+                <table class="table" id="admin_table_delete">
+                    <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Mail_id</th>
+                        <th>Button</th>
+                    </tr>
+                    </thead>
+                    <tbody id="delete_input">
+                    </tbody>
+                </table>
+            </section>
+            <button type="button" onclick="assign_name('#delete_input','#admin_table_delete');onAddWebsite()"
+                    id="add_button">ADD ROW
+            </button>
+            <button type="submit" class="submit_btn">Submit</button>
+        </form>
+    </section>
+
+</div>
+</body>
+<script>
+    document.getElementById("userName").innerHTML = '{{ConZon_user}}';
+    document.querySelector('.status h1').innerHTML = '{{ count_data }}';
+    document.querySelector('#sta2 h1').innerHTML = '{{ count_data_without }}';
+</script>
+<script src="../static/js/home_page.js">
+</script>
+</html>
