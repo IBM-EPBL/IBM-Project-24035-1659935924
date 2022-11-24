@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConZon</string>
+    <string name="login">Login</string>
+    <string name="title_activity_containment_zone">ContainmentZone</string>
+</resources>
