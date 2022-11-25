@@ -3,7 +3,7 @@
 
 # Demo Link: </br>
     YouTube: 
-    Google Drive:
+    Google Drive:https://drive.google.com/file/d/1jIDcVPdCx7yI-pf-L7CPGVrbI8WdJyN3/view?usp=share_link
   
 # Project Description 📜📜:
 The application is intended to provide information about the containment zones in a particular region by alerting people, through continuous monitoring of an individual's location through GPS.The key benefits of the application are monitoring people's activity and alerting them when they enter a contaminated zone.
