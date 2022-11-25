@@ -137,7 +137,7 @@ def user_register(username, name, passwords):
         ibm_db.bind_param(prep_stmt, 2, name)
         ibm_db.bind_param(prep_stmt, 3, passwords)
         execution(prep_stmt)
-        ConZon_Mail_config.assing_mail('ConZo Account Creation', 'Account was successfully Created', name)
+        ConZon_Mail_config.assing_mail('ConZo Account Creation', ' User Account was successfully Created', name)
         return "Created successfully 😍"
 
 
