@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/adminlogin.css">
+    <link rel="icon" href="../static/picture/conzo-logo.png" type="image/icon type">
+</head>
+<body>
+<video src="../static/video/background.mp4" autoplay loop playsinline muted></video>
+<div class="box">
+    <form id="forms" method="post" autocomplete="off">
+        <h2>LOGIN</h2>
+        <div class="inputBox">
+            <input type="text" name="mail" id="mail" required="required">
+            <span>Username</span>
+            <i></i>
+        </div>
+        <small></small>
+        <div class="inputBox">
+            <input type="password" required="required" name="password" id="password">
+            <span>Password</span>
+            <i></i>
+        </div>
+        <small></small>
+        <div class="links">
+            <a href="#">Forgot Password ?</a>
+            <a href="/admin/registration"><b>REGISTER</b></a>
+        </div>
+        <input type="submit" value="Login">
+            <h4 class="text-danger" id="pass-warning" style="color: white"></h4>
+    </form>
+</div>
+<script>document.getElementById("pass-warning").innerHTML = '{{data}}';</script>
+<script src="../static/js/adminlogin.js">
+</script>
+</body>
+</html>
